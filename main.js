@@ -13,7 +13,7 @@ var firstStand = {
   },
 
   cookiesHour: function () {
-      var cookie = Math.floor(this.averageSales * this.customersHour(this.minCustomers, this.maxCustomers));
+      var cookie = Math.floor(this.averageSales * this.customersHour());
       return cookie;
     },
 
@@ -49,7 +49,7 @@ var secondStand = {
   },
 
   cookiesHour: function () {
-      var cookie = Math.floor(this.averageSales * this.customersHour(this.minCustomers, this.maxCustomers));
+      var cookie = Math.floor(this.averageSales * this.customersHour());
       return cookie;
     },
 
@@ -85,7 +85,7 @@ var thirdStand = {
   },
 
   cookiesHour: function () {
-      var cookie = Math.floor(this.averageSales * this.customersHour(this.minCustomers, this.maxCustomers));
+      var cookie = Math.floor(this.averageSales * this.customersHour());
       return cookie;
     },
 
@@ -121,7 +121,7 @@ var fourthStand = {
   },
 
   cookiesHour: function () {
-      var cookie = Math.floor(this.averageSales * this.customersHour(this.minCustomers, this.maxCustomers));
+      var cookie = Math.floor(this.averageSales * this.customersHour());
       return cookie;
     },
 
@@ -157,7 +157,7 @@ var fifthStand = {
   },
 
   cookiesHour: function () {
-      var cookie = Math.floor(this.averageSales * this.customersHour(this.minCustomers, this.maxCustomers));
+      var cookie = Math.floor(this.averageSales * this.customersHour());
       return cookie;
     },
 

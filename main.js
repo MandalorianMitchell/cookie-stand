@@ -13,15 +13,25 @@ var firstStand = {
   },
 
   cookiesHour: function () {
-    var pioneerList = document.getElementById('pioneers-cookies-list');
-    for (var index = 0; index < hours.length; index++) {
       var cookie = Math.floor(this.averageSales * this.customersHour(this.minCustomers, this.maxCustomers));
-      pioneerList.innerHTML += '<li>' + cookie + '</li>';
-      console.log(cookie);
-    }
-  },
+      return cookie;
+    },
+
+  toHTML: function () {
+      var cookiesSold = 0;
+      var HTML = '<table><tr><th colspan="2">' + this.name + '</th></tr><tr><th>Hour</th><th>Cookies Sold</th></tr>';
+      for (var hourly = 0; hourly < hours.length; hourly++) {
+        HTML += '<tr><td>' + hours[hourly] + '</td><td>' + this.cookiesHour() + ' Cookies' + '</td></tr>';
+        cookiesSold += this.cookiesHour();
+      }
+
+      HTML += '<tr><td colspan="2">' + 'Total: ' + cookiesSold + '</td></tr>' + '</table>';
+      return HTML;
+
+    },
 };
-firstStand.cookiesHour();
+var firstCookies = document.getElementById('pioneer-cookies');
+firstCookies.innerHTML = firstStand.toHTML();
 
 var secondStand = {
   name: 'Portland Airport',
@@ -36,15 +46,25 @@ var secondStand = {
   },
 
   cookiesHour: function () {
-    var airportList = document.getElementById('airport-cookies-list');
-    for (var index = 0; index < hours.length; index++) {
       var cookie = Math.floor(this.averageSales * this.customersHour(this.minCustomers, this.maxCustomers));
-      airportList.innerHTML += '<li>' + cookie + '</li>';
-      console.log(cookie);
-    }
-  },
+      return cookie;
+    },
+
+  toHTML: function () {
+      var cookiesSold = 0;
+      var HTML = '<table><tr><th colspan="2">' + this.name + '</th></tr><tr><th>Hour</th><th>Cookies Sold</th></tr>';
+      for (var hourly = 0; hourly < hours.length; hourly++) {
+        HTML += '<tr><td>' + hours[hourly] + '</td><td>' + this.cookiesHour() + ' Cookies' + '</td></tr>';
+        cookiesSold += this.cookiesHour();
+      }
+
+      HTML += '<tr><td colspan="2">' + 'Total: ' + cookiesSold + '</td></tr>' + '</table>';
+      return HTML;
+
+    },
 };
-secondStand.cookiesHour();
+var secondCookies = document.getElementById('airport-cookies');
+secondCookies.innerHTML = secondStand.toHTML();
 
 var thirdStand = {
   name: 'Washington Square',
@@ -59,15 +79,25 @@ var thirdStand = {
   },
 
   cookiesHour: function () {
-    var washingtonList = document.getElementById('washington-cookies-list');
-    for (var index = 0; index < hours.length; index++) {
       var cookie = Math.floor(this.averageSales * this.customersHour(this.minCustomers, this.maxCustomers));
-      washingtonList.innerHTML += '<li>' + cookie + '</li>';
-      console.log(cookie);
-    }
-  },
+      return cookie;
+    },
+
+  toHTML: function () {
+      var cookiesSold = 0;
+      var HTML = '<table><tr><th colspan="2">' + this.name + '</th></tr><tr><th>Hour</th><th>Cookies Sold</th></tr>';
+      for (var hourly = 0; hourly < hours.length; hourly++) {
+        HTML += '<tr><td>' + hours[hourly] + '</td><td>' + this.cookiesHour() + ' Cookies' + '</td></tr>';
+        cookiesSold += this.cookiesHour();
+      }
+
+      HTML += '<tr><td colspan="2">' + 'Total: ' + cookiesSold + '</td></tr>' + '</table>';
+      return HTML;
+
+    },
 };
-thirdStand.cookiesHour();
+var thirdCookies = document.getElementById('washington-cookies');
+thirdCookies.innerHTML = thirdStand.toHTML();
 
 var fourthStand = {
   name: 'Sellwood',
@@ -82,15 +112,25 @@ var fourthStand = {
   },
 
   cookiesHour: function () {
-    var sellwoodList = document.getElementById('sellwood-cookies-list');
-    for (var index = 0; index < hours.length; index++) {
       var cookie = Math.floor(this.averageSales * this.customersHour(this.minCustomers, this.maxCustomers));
-      sellwoodList.innerHTML += '<li>' + cookie + '</li>';
-      console.log(cookie);
-    }
-  },
+      return cookie;
+    },
+
+  toHTML: function () {
+      var cookiesSold = 0;
+      var HTML = '<table><tr><th colspan="2">' + this.name + '</th></tr><tr><th>Hour</th><th>Cookies Sold</th></tr>';
+      for (var hourly = 0; hourly < hours.length; hourly++) {
+        HTML += '<tr><td>' + hours[hourly] + '</td><td>' + this.cookiesHour() + ' Cookies' + '</td></tr>';
+        cookiesSold += this.cookiesHour();
+      }
+
+      HTML += '<tr><td colspan="2">' + 'Total: ' + cookiesSold + '</td></tr>' + '</table>';
+      return HTML;
+
+    },
 };
-fourthStand.cookiesHour();
+var fourthCookies = document.getElementById('sellwood-cookies');
+fourthCookies.innerHTML = fourthStand.toHTML();
 
 var fifthStand = {
   name: 'Pearl District',
@@ -105,12 +145,22 @@ var fifthStand = {
   },
 
   cookiesHour: function () {
-    var pearlList = document.getElementById('pearl-cookies-list');
-    for (var index = 0; index < hours.length; index++) {
       var cookie = Math.floor(this.averageSales * this.customersHour(this.minCustomers, this.maxCustomers));
-      pearlList.innerHTML += '<li>' + cookie + '</li>';
-      console.log(cookie);
-    }
-  },
+      return cookie;
+    },
+
+  toHTML: function () {
+      var cookiesSold = 0;
+      var HTML = '<table><tr><th colspan="2">' + this.name + '</th></tr><tr><th>Hour</th><th>Cookies Sold</th></tr>';
+      for (var hourly = 0; hourly < hours.length; hourly++) {
+        HTML += '<tr><td>' + hours[hourly] + '</td><td>' + this.cookiesHour() + ' Cookies' + '</td></tr>';
+        cookiesSold += this.cookiesHour();
+      }
+
+      HTML += '<tr><td colspan="2">' + 'Total: ' + cookiesSold + '</td></tr>' + '</table>';
+      return HTML;
+
+    },
 };
-fifthStand.cookiesHour();
+var fifthCookies = document.getElementById('pearl-cookies');
+fifthCookies.innerHTML = fifthStand.toHTML();

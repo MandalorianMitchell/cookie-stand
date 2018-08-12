@@ -18,14 +18,17 @@ var firstStand = {
     },
 
   toHTML: function () {
-      var cookiesSold = 0;
+      var totalCookies = 0;
       var HTML = '<table><tr><th colspan="2">' + this.name + '</th></tr><tr><th>Hour</th><th>Cookies Sold</th></tr>';
       for (var hourly = 0; hourly < hours.length; hourly++) {
-        HTML += '<tr><td>' + hours[hourly] + '</td><td>' + this.cookiesHour() + ' Cookies' + '</td></tr>';
-        cookiesSold += this.cookiesHour();
+        var randomCookiesHour = this.cookiesHour();
+        console.log(randomCookiesHour);
+        HTML += '<tr><td>' + hours[hourly] + '</td><td>' + randomCookiesHour + ' Cookies' + '</td></tr>';
+        totalCookies += randomCookiesHour;
       }
 
-      HTML += '<tr><td colspan="2">' + 'Total: ' + cookiesSold + '</td></tr>' + '</table>';
+      HTML += '<tr><td colspan="2">' + 'Total: ' + totalCookies + '</td></tr>' + '</table>';
+      console.log('Total: ' + totalCookies);
       return HTML;
 
     },
@@ -51,14 +54,17 @@ var secondStand = {
     },
 
   toHTML: function () {
-      var cookiesSold = 0;
+      var totalCookies = 0;
       var HTML = '<table><tr><th colspan="2">' + this.name + '</th></tr><tr><th>Hour</th><th>Cookies Sold</th></tr>';
       for (var hourly = 0; hourly < hours.length; hourly++) {
-        HTML += '<tr><td>' + hours[hourly] + '</td><td>' + this.cookiesHour() + ' Cookies' + '</td></tr>';
-        cookiesSold += this.cookiesHour();
+        var randomCookiesHour = this.cookiesHour();
+        console.log(randomCookiesHour);
+        HTML += '<tr><td>' + hours[hourly] + '</td><td>' + randomCookiesHour + ' Cookies' + '</td></tr>';
+        totalCookies += randomCookiesHour;
       }
 
-      HTML += '<tr><td colspan="2">' + 'Total: ' + cookiesSold + '</td></tr>' + '</table>';
+      HTML += '<tr><td colspan="2">' + 'Total: ' + totalCookies + '</td></tr>' + '</table>';
+      console.log('Total: ' + totalCookies);
       return HTML;
 
     },
@@ -84,14 +90,17 @@ var thirdStand = {
     },
 
   toHTML: function () {
-      var cookiesSold = 0;
+      var totalCookies = 0;
       var HTML = '<table><tr><th colspan="2">' + this.name + '</th></tr><tr><th>Hour</th><th>Cookies Sold</th></tr>';
       for (var hourly = 0; hourly < hours.length; hourly++) {
-        HTML += '<tr><td>' + hours[hourly] + '</td><td>' + this.cookiesHour() + ' Cookies' + '</td></tr>';
-        cookiesSold += this.cookiesHour();
+        var randomCookiesHour = this.cookiesHour();
+        console.log(randomCookiesHour);
+        HTML += '<tr><td>' + hours[hourly] + '</td><td>' + randomCookiesHour + ' Cookies' + '</td></tr>';
+        totalCookies += randomCookiesHour;
       }
 
-      HTML += '<tr><td colspan="2">' + 'Total: ' + cookiesSold + '</td></tr>' + '</table>';
+      HTML += '<tr><td colspan="2">' + 'Total: ' + totalCookies + '</td></tr>' + '</table>';
+      console.log('Total: ' + totalCookies);
       return HTML;
 
     },
@@ -117,14 +126,17 @@ var fourthStand = {
     },
 
   toHTML: function () {
-      var cookiesSold = 0;
+      var totalCookies = 0;
       var HTML = '<table><tr><th colspan="2">' + this.name + '</th></tr><tr><th>Hour</th><th>Cookies Sold</th></tr>';
       for (var hourly = 0; hourly < hours.length; hourly++) {
-        HTML += '<tr><td>' + hours[hourly] + '</td><td>' + this.cookiesHour() + ' Cookies' + '</td></tr>';
-        cookiesSold += this.cookiesHour();
+        var randomCookiesHour = this.cookiesHour();
+        console.log(randomCookiesHour);
+        HTML += '<tr><td>' + hours[hourly] + '</td><td>' + randomCookiesHour + ' Cookies' + '</td></tr>';
+        totalCookies += randomCookiesHour;
       }
 
-      HTML += '<tr><td colspan="2">' + 'Total: ' + cookiesSold + '</td></tr>' + '</table>';
+      HTML += '<tr><td colspan="2">' + 'Total: ' + totalCookies + '</td></tr>' + '</table>';
+      console.log('Total: ' + totalCookies);
       return HTML;
 
     },
@@ -150,14 +162,17 @@ var fifthStand = {
     },
 
   toHTML: function () {
-      var cookiesSold = 0;
+      var totalCookies = 0;
       var HTML = '<table><tr><th colspan="2">' + this.name + '</th></tr><tr><th>Hour</th><th>Cookies Sold</th></tr>';
       for (var hourly = 0; hourly < hours.length; hourly++) {
-        HTML += '<tr><td>' + hours[hourly] + '</td><td>' + this.cookiesHour() + ' Cookies' + '</td></tr>';
-        cookiesSold += this.cookiesHour();
+        var randomCookiesHour = this.cookiesHour();
+        console.log(randomCookiesHour);
+        HTML += '<tr><td>' + hours[hourly] + '</td><td>' + randomCookiesHour + ' Cookies' + '</td></tr>';
+        totalCookies += randomCookiesHour;
       }
 
-      HTML += '<tr><td colspan="2">' + 'Total: ' + cookiesSold + '</td></tr>' + '</table>';
+      HTML += '<tr><td colspan="2">' + 'Total: ' + totalCookies + '</td></tr>' + '</table>';
+      console.log('Total: ' + totalCookies);
       return HTML;
 
     },
